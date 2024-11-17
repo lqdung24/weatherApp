@@ -33,7 +33,7 @@ public class WetherAppController {
                 model.addAttribute("temperature", weatherResponse.getMain().getTemp());
                 model.addAttribute("humidity", weatherResponse.getMain().getHumidity());
                 model.addAttribute("windSpeed", weatherResponse.getWind().getSpeed());
-                String weatherIcon = "wi git remote remove origin\nwi-owm" + weatherResponse.getWeather().get(0).getId();
+                String weatherIcon = "wi wi-owm" + weatherResponse.getWeather().get(0).getId();
                 model.addAttribute("weatherIcon", weatherIcon);
             }
         } catch (HttpClientErrorException.NotFound e) {
